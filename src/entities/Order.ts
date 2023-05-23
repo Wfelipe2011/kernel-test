@@ -13,6 +13,6 @@ export class Order {
   }
 
   public getAmount(): number {
-    return this.amount;
+    return this.amount * 2;
   }
 }
