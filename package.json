@@ -1,16 +1,17 @@
 {
   "name": "kernel",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "precompile": "rm -rf dist",
-    "compile": "npx tsc"
+    "prebuild": "rimraf lib",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "rimraf": "^5.0.1",
     "typescript": "^5.0.4"
   }
 }
